@@ -1,1 +1,1478 @@
-Chancel
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="fr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<!-- meta charec set -->
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Page Title -->
+	<title>6IT</title>
+	<!-- Meta Description -->
+	<meta name="description" content="Toutes les réalisation de 6IT">
+	<meta name="keywords"
+		content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+	<meta name="author" content="6IT">
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300|Roboto:400|Raleway:500|" rel="stylesheet">
+
+	<!-- CSS
+		================================================== -->
+	<!-- Fontawesome Icon font -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Twitter Bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jquery.fancybox  -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<!-- animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- media-queries -->
+	<link rel="stylesheet" href="css/media-queries.css">
+
+	<!-- Modernizer Script for old Browsers -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+		.justify-content-center {
+			display: flex;
+			justify-content: center;
+		}
+
+		.justify-content-center * {
+			float: none;
+		}
+
+		.mb-5,
+		.my-5 {
+			margin-bottom: 3rem !important;
+		}
+
+		.mb-3,
+		.my-3 {
+			margin-bottom: 1rem !important;
+		}
+
+		.content-title {
+			font-size: 25px;
+			line-height: 50px;
+			line-height: 45px;
+			line-height: 40px;
+			/* font-weight: bold; */
+			color: #000;
+		}
+
+		.section-title {
+			margin-bottom: 70px;
+		}
+
+		.text-color {
+			color: #f75757 !important;
+			color: #2e7eed !important;
+		}
+
+		.text-white {
+			color: #fff !important;
+		}
+
+		h2.content-title {
+			font-family: poppins;
+		}
+
+		h3 {
+			font-family: Roboto;
+			font-family: poppins;
+		}
+
+		.h6 {
+			font-size: 18px;
+			line-height: 28px;
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-family: Roboto;
+		}
+
+		.section-title .h6 {
+			font-size: 25px;
+			font-weight: 800;
+			font-family: inherit;
+		}
+
+		.btn-transparent {
+			background: transparent;
+			color: #41228e;
+			font-weight: bold;
+		}
+
+		#devisModal .tab-content {
+			min-height: 520px;
+			display: flex;
+		}
+
+		#devisModal .tab-pane {
+			width: 100%;
+		}
+
+		.nav-tabs {
+			margin-bottom: 15px;
+		}
+
+		.nav-tabs a {
+			color: #000;
+		}
+
+		.nav-tabs>li.active>a,
+		.nav-tabs>li.active>a:hover,
+		.nav-tabs>li.active>a:focus {
+			color: #48c82d;
+			color: #1ea78d;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			display: block;
+			float: left;
+			margin-right: -2em;
+			opacity: 0;
+			width: 1em;
+			z-index: -1;
+		}
+
+		input[type="checkbox"]+label,
+		input[type="radio"]+label {
+			text-decoration: none;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1em;
+			font-weight: 400;
+			padding-left: 2.4em;
+			padding-right: 0.75em;
+			position: relative;
+		}
+
+		input[type="checkbox"]+label:before,
+		input[type="radio"]+label:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'FontAwesome';
+			font-weight: 900;
+		}
+
+		input[type="checkbox"]+label:before,
+		input[type="radio"]+label:before {
+			background: rgba(144, 144, 144, 0.25);
+			border-radius: 3px;
+			content: '';
+			display: inline-block;
+			font-size: 0.8em;
+			height: 2.0625em;
+			left: 0;
+			line-height: 2.0625em;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 2.0625em;
+		}
+
+		input[type="checkbox"]:checked+label:before,
+		input[type="radio"]:checked+label:before {
+			background: #2e3842;
+			background: #0250bb;
+			color: #fff;
+			content: '\f00c';
+		}
+
+		input[type="checkbox"]:focus+label:before,
+		input[type="radio"]:focus+label:before {
+			box-shadow: 0 0 0 2px #21b2a6;
+		}
+
+		input[type="checkbox"]+label:before {
+			border-radius: 3px;
+		}
+
+		input[type="radio"]+label:before {
+			border-radius: 100%;
+		}
+
+		select option {
+			color: #2E3842;
+			color: #0250bb;
+			background: #ffffff;
+		}
+
+		input[type="checkbox"]+label,
+		input[type="radio"]+label {
+			color: #4E4852;
+		}
+
+		input[type="checkbox"]+label:before,
+		input[type="radio"]+label:before {
+			background: rgba(0, 0, 0, 0.0375);
+		}
+
+		input[type="checkbox"]:checked+label:before,
+		input[type="radio"]:checked+label:before {
+			background: #2E3842;
+			background: #0250bb;
+			color: #ffffff;
+		}
+
+		strong.bit.dark {
+			font-family: consolas;
+			color: #000;
+		}
+
+		strong.bit {
+			font-family: consolas;
+			color: #fff;
+		}
+
+		footer p .hide a {
+			color: #1ea78d;
+		}
+	</style>
+
+</head>
+
+<body id="body">
+
+	<div id="preloader"></div>
+	<!-- end preloader -->
+
+	<!-- 
+        Fixed Navigation
+        ==================================== -->
+	<header id="navigation" class="navbar-fixed-top navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<!-- /responsive nav button -->
+
+				<!-- logo -->
+				<a class="navbar-brand" href="#body">
+					<!-- <h1 id="logo" style="width:48px">
+						<img src="img/logo_x0.png" alt="6it" class="img-responsive" />
+					</h1> -->
+					<h1 id="logo">
+						<img src="img/logo.png" alt="6it" />
+					</h1>
+				</a>
+				<!-- /logo -->
+			</div>
+
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right" role="navigation">
+				<ul id="nav" class="nav navbar-nav">
+					<li class="current"><a href="#body">Accueil</a></li>
+					<li><a href="#features">Services</a></li>
+					<li><a href="#works">Catalogue</a></li>
+					<!-- <li><a href="#team">Team</a></li> -->
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
+
+		</div>
+	</header>
+	<!--
+        End Fixed Navigation
+        ==================================== -->
+
+
+
+
+
+	<!--
+        Home Slider
+        ==================================== -->
+
+	<section id="slider">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators bullet -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			</ol>
+			<!-- End Indicators bullet -->
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<!-- single slide -->
+				<div class="item active">
+					<div class="carousel-caption">
+						<!-- <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> bInoTech</span>!</h2> -->
+						<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><strong
+								class="bit">
+								bInoTech</strong></h2>
+						<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
+								class="color">/creativ&eacute;</span>, notre ma&icirc;tre mot.</h3>
+						<p data-wow-duration="1000ms" class="wow slideInRight animated">Nous sommes des professionnels
+						</p>
+
+						<ul class="social-links text-center">
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-facebook fa-lg"></i></a>
+							</li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-google-plus fa-lg"></i></a>
+							</li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-dribbble fa-lg"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end single slide -->
+
+				<!-- single slide -->
+				<div class="item">
+					<div class="carousel-caption">
+						<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><strong
+								class="bit">
+								bInoTech</strong>!</h2>
+						<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span
+								class="color">/perfection</span>, notre objectif.</h3>
+						<p data-wow-duration="500ms" class="wow slideInRight animated">Nous sommes des professionnels
+						</p>
+
+						<ul class="social-links text-center">
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-facebook fa-lg"></i></a>
+							</li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-google-plus fa-lg"></i></a>
+							</li>
+							<li><a href="https://www.facebook.com/kb1afrik"><i class="fa fa-dribbble fa-lg"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end single slide -->
+
+			</div>
+			<!-- End Wrapper for slides -->
+
+		</div>
+	</section>
+
+	<!--
+        End Home SliderEnd
+        ==================================== -->
+
+	<!-- about -->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-10 text-center" style="line-height: 1.8; font-weight: 400;">
+					<p class="font-secondary paragraph-lg text-dark mb-5" style="font-size:1.3789em;"><strong
+							class="bit dark">bIT</strong> est une startup spécialisée dans la conception et
+						l'intégration de solutions
+						informatiques: logiciels, applications, et sites web. Nous suivons des procédures de travail
+						normalisées et flexibles nous permettons de collaborer avec n'importe quelles entités <strong
+							style="color:#000;">(entreprises ou particuliers)</strong> o&ugrave; qu'ils soient dans le
+						monde.
+						N’hésitez plus et évaluez les co&ucirc;ts à engager pour réaliser votre projet en demandant
+						immédiatement un devis <u style="color:#000;"> c'est gratuit</u>.
+					</p>
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#devisModal">
+						<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#"> -->
+						Demandez un devis
+					</button>
+				</div>
+				<div class="col-lg-offset-1 text-center"></div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="devisModal" tabindex="-1" role="dialog" aria-labelledby="devisModalLabel"
+				aria-hidden="true" data-keyboard="true" data-backdrop="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title" id="devisModalLabel">
+								Faire un devis
+							</h4>
+						</div>
+						<div class="modal-body contact-form">
+							<h3>Quel type de produit souhaitez vous commander:</h3>
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#site" data-toggle="tab">Site Web</a></li>
+								<li><a href="#app" data-toggle="tab">Application</a></li>
+								<li><a href="#soft" data-toggle="tab">Logiciel</a></li>
+							</ul>
+							<div class="tab-content">
+
+								<!-- site web data -->
+								<div class="tab-pane active" id="site">
+									<h3>Quelle genre de site web:</h3>
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#entreprise" data-toggle="tab">Entreprise</a></li>
+										<li><a href="#portfolio" data-toggle="tab">Portfolio</a></li>
+										<li><a href="#_ecommerce" data-toggle="tab">e-Commerce</a></li>
+										<li><a href="#_elearning" data-toggle="tab">e-Learning</a></li>
+										<li><a href="#_social" data-toggle="tab">Réseau social</a></li>
+									</ul>
+									<div class="tab-content">
+										<!-- entreprise data -->
+										<div class="tab-pane active" id="entreprise">
+											<form>
+												<label>Nom de l'entreprise</label>
+												<input type="text" name="entreprise_nom" placeholder="6InoTech"
+													class="form-control" />
+												<label>Activité principale</label>
+												<input type="text" name="entreprise_activity" placeholder="Developer"
+													class="form-control" />
+												<label>Détaillez le ou les objectifs attendus du site à
+													concevoir</label>
+												<textarea row="3" class="form-control"
+													placeholder="solve IT problems"></textarea>
+												<!-- Rubriques -->
+												<fieldset>
+													<label>Pour un site de présentation d'entreprise nous avons prévu
+														les champs suivants:</label>
+													<div>
+														<input id="site_rub_1" type="checkbox" name="site_rub_1"
+															value="Accueil" />
+														<label for="site_rub_1">Accueil</label>
+													</div>
+													<div>
+														<input id="site_rub_2" type="checkbox" name="site_rub_2"
+															value="A propos" />
+														<label for="site_rub_2">&Agrave propos</label>
+													</div>
+													<div>
+														<input id="site_rub_3" type="checkbox" name="site_rub_3"
+															value="Nos Equipes" />
+														<label for="site_rub_3">Nos équipes</label>
+													</div>
+													<div>
+														<input id="site_rub_4" type="checkbox" name="site_rub_4"
+															value="Nos tarif" />
+														<label for="site_rub_4">Nos tarifs</label>
+													</div>
+													<div>
+														<input id="site_rub_5" type="checkbox" name="site_rub_5"
+															value="Nos projets" />
+														<label for="site_rub_5">Nos projets</label>
+													</div>
+													Définissez les différentes rubriques et sous-rubriques
+													supplémentaires
+													<input type="text" name="entreprise_mnu" placeholder="Autre"
+														class="form-control" />
+												</fieldset>
+												<!-- Supplements -->
+												<fieldset>
+													<label>Les contraintes techniques</label>
+													<div>
+														<input id="site_supp_1" type="checkbox" name="site_supp_1"
+															value="" />
+														<label for="site_supp_1">Votre site web contiendra-t-il des
+															droits d’accès ?</label>
+													</div>
+													<div>
+														<input id="site_supp_2" type="checkbox" name="site_supp_2"
+															value="" />
+														<label for="site_supp_2">Votre site web contiendra-t-il un
+															système d’authentification ?</label>
+													</div>
+													<div>
+														<input id="site_supp_3" type="checkbox" name="site_supp_3"
+															value="" />
+														<label for="site_supp_3">Faut-il intégrer un outil d’analyse et
+															de statistiques ?</label>
+													</div>
+													<div>
+														<input id="site_supp_4" type="checkbox" name="site_supp_4"
+															value="" />
+														<label for="site_supp_4">Votre site web doit-il être multilingue
+															?</label>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+										<!-- Portfolio  data -->
+										<div class="tab-pane" id="portfolio">
+											Tous les Portfolio
+										</div>
+										<div class="tab-pane" id="ecommerce">
+											e-commerce
+										</div>
+										<!-- project data -->
+										<div class="tab-pane" id="_elearning">
+											Tous les livres
+										</div>
+										<!-- pther data -->
+										<div class="tab-pane" id="_social">
+											Tous les témoignages
+										</div>
+									</div>
+								</div><!-- End site web data -->
+
+								<!-- application data -->
+								<div class="tab-pane" id="app">
+									<h3>Quelle application:</h3>
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#ecommerce" data-toggle="tab">e-commerce</a></li>
+										<li><a href="#elearning" data-toggle="tab">e-learning</a></li>
+										<li><a href="#social" data-toggle="tab">Réseau social</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="ecommerce">
+											Tous les ecommerces
+										</div>
+										<!-- project data -->
+										<div class="tab-pane" id="elearning">
+											Tous les livres
+										</div>
+										<!-- pther data -->
+										<div class="tab-pane" id="social">
+											Tous les
+											témoignages
+										</div>
+									</div>
+								</div><!-- End application data -->
+
+								<!-- logiciel data -->
+								<div class="tab-pane" id="soft">
+									<h3>Quel Logiciel:</h3>
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#pharma" data-toggle="tab">Gestion de pharmacie</a>
+										</li>
+										<li><a href="#ecole" data-toggle="tab">Gestion d'école</a></li>
+										<li><a href="#caisse" data-toggle="tab">Gestion de caisse</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="pharma">
+											pharma
+										</div>
+										<!-- project data -->
+										<div class="tab-pane" id="ecole">
+											Tous les ecole
+										</div>
+										<!-- pther data -->
+										<div class="tab-pane" id="caisse">
+											Tous les caisses
+										</div>
+									</div>
+								</div><!-- End logiciel data -->
+
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#propsModal">
+								Submit changes
+							</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div>
+			</div><!-- /.modal -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="propsModal" tabindex="-1" role="dialog" aria-labelledby="propsModalLabel"
+				aria-hidden="true" data-keyboard="true" data-backdrop="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								&times;
+							</button>
+							<h4 class="modal-title" id="propsModalLabel">
+								Faire un devis
+							</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<input type="text" name="" class="form-control" />
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#devisModal">
+								Submit changes
+							</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div>
+			</div><!-- /.modal -->
+
+	</section>
+	<!-- /about -->
+
+	<!--
+        Features
+        ==================================== -->
+
+	<section id="features" class="features">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-5 text-center">
+					<div class="section-title wow bounceInDown animated" data-wow-duration="500ms">
+						<span class="h6 text-color">Nos Services</span>
+						<h2 class="mt-3 content-title ">Nous proposons un large panel de services dédiés aux IT </h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<!-- <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+					<h2>Features</h2>
+					<div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+				</div> -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-desktop fa-3x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Development Web.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-copy fa-4x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Interface Design.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-bullhorn fa-4x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Consultant IT.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeDown" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-code-fork fa-4x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Suivit de projet.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeUp" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-android fa-4x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Development IOS & Android.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeUp" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="service-item mb-5">
+						<div class="service-icon">
+							<i class="fa fa-edit fa-4x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Createur de contenu.</h3>
+							<p>Notre agence ne vient pas remplacer vos équipes internes, mais vous accompagner comme
+								partenaire</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+			</div>
+		</div>
+	</section>
+
+	<!--
+        End Features
+        ==================================== -->
+
+
+	<!--
+        Our Works
+        ==================================== -->
+
+	<section id="works" class="works clearfix">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-5 text-center">
+					<div class="section-title wow bounceInDown animated" data-wow-duration="500ms">
+						<span class="h6 text-color">Nos réalisations</span>
+						<h2 class="mt-3 content-title ">Nous avons réalisé de nombreux projets </h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="sec-title text-center">
+					<h2>Nos réalisations</h2>
+					<div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+				</div> -->
+
+				<!-- <div class="sec-sub-title text-center">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div> -->
+
+				<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+					<ul class="text-center">
+						<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
+						<li><a href="javascript:;" data-filter=".branding" class="filter">Présentation</a></li>
+						<li><a href="javascript:;" data-filter=".e-leanring" class="filter">E-learning</a></li>
+						<li><a href="javascript:;" data-filter=".soft" class="filter">Management</a></li>
+						<li><a href="javascript:;" data-filter=".application" class="filter">Application</a></li>
+						<li><a href="javascript:;" data-filter=".e-commerce" class="filter">E-Commerce</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="">
+			<div class="project-wrapper">
+
+				<figure class="mix work-item branding">
+					<img src="img/works/item-1.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works" title="Biographie de l'artiste musicien Gille Bagues"
+									href="img/works/item-1_.jpg">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+								<a title="www.gillebagues.com" href="gillebagues.html">
+									<i class="fa fa-plus fa-lg"></i>
+								</a>
+								<!-- <a title="www.declausoft.net/gillebagues"
+								href="www.declausoft.net/gillebagues" target="_blank">
+								<i class="fa fa-link fa-lg"></i>
+							</a> -->
+							</p>
+							<h4>Biographie de Gille Bagues</h4>
+							<p>Présentation</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item e-leanring">
+					<img src="img/works/item-2.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works"
+									title="Site de formation e-learning exclusiment dédié à l'informatique"
+									href="img/works/item-2_.jpg">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+								<a title="koyekola.com" href="koyekola.html">
+									<i class="fa fa-plus fa-lg"></i>
+								</a>
+								<!-- <a title="www.koyekola.com" href="https://www.koyekola.com"
+								target="_blank">
+								<i class="fa fa-link fa-lg"></i>
+							</a> -->
+							</p>
+							<h4>koyekola.com</h4>
+							<p>E-learning</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item soft">
+					<img src="img/works/item-3.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works"
+									title="Gérer aisément votre école de la maternelle à l'université"
+									href="img/works/item-3.jpg">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+								<a title="Ntik Manager" href="ntik.html">
+									<i class="fa fa-plus fa-lg"></i>
+								</a>
+								<!-- <a title="Ntik Manager" href="https://www.koyekola.com/ecole" target="_blank">
+								<i class="fa fa-plus fa-lg"></i>
+							</a> -->
+							</p>
+							<h4>NTIK Manager</h4>
+							<p>Management</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item branding">
+					<img src="img/works/item-4.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works" title="Prototype du site proposé à l'église METL"
+									href="img/works/item-4.jpg">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+							<h4>Prototype du site proposé à l'église METL</h4>
+							<p>Présentation</p>
+							<!-- <a title="www.koyekola.com/ecole" href="https://www.koyekola.com/metl" target="_blank">
+								<i class="fa fa-link fa-lg"></i>
+							</a> -->
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item e-leanring">
+					<img src="img/works/item-5.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a title="www.servtec-congo.com/ilrn" href="www.servtec-congo.com/ilrn" target="_blank">
+									<i class="fa fa-link fa-lg"></i>
+								</a>
+								<a class="fancybox" rel="works"
+									title="Système de formation en e-learning du groupe SERVTEC"
+									href="img/works/item-5.jpg">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+							<h4>Système de formation en e-learning du groupe SERVTEC</h4>
+							<p>E-learning</p>
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item branding">
+					<img src="img/works/item-6.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a title="www.vision-360-consultingcom/ilrn" href="www.vision-360-consultingcom/ilrn"
+									target="_blank">
+									<i class="fa fa-link fa-lg"></i>
+								</a>
+								<a class="fancybox" rel="works"
+									title="Site de présentation de la société Vision-360-consulting"
+									href="img/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i>
+								</a>
+							<h4>Site de présentation de la société Vision-360-consulting</h4>
+							<p>Présentation</p>
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item e-commerce">
+					<img src="img/works/item-7.jpg" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works"
+									title="Site de e-commerce proposé à la boutique &Eacute;toile d'afrique"
+									href="img/works/item-7.png"><i class="fa fa-eye fa-lg"></i>
+								</a>
+							<h4>Site de e-commerce proposé à la boutique &Eacute;toile d'afrique</h4>
+							<p>Photography</p>
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item application">
+					<img src="img/works/item-10.png" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works" title="Application FABB"
+									href="img/works/item-10.png">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+								<a title="FABB on playstore" href="https://play.google.com/store/apps/details?id=com.fabb&hl=fr_FR" target="_blank">
+								<i class="fa fa-link fa-lg"></i>
+								</a>
+							<h4>Application FABB</h4>
+							<p>FABB est disponible sur le playstore</p>
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+				<figure class="mix work-item e-commerce">
+					<img src="img/works/item-9.png" alt="">
+					<figcaption class="overlay">
+						<div>
+							<p style="display: flex; flex-direction: row; justify-content: center;">
+								<a class="fancybox" rel="works" title="Prototype de curiculum vitae"
+									href="img/works/item-9.png">
+									<i class="fa fa-eye fa-lg"></i>
+								</a>
+								<a title="www.delicesmoonlight.com" href="https://www.delicesmoonlight.com" target="_blank">
+								<i class="fa fa-link fa-lg"></i>
+							</a>
+							<h4>Prototype CV</h4>
+							<p>Curiculum</p>
+							</p>
+						</div>
+					</figcaption>
+				</figure>
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<!--
+        End Our Works
+        ==================================== -->
+
+	<!--
+        Meet Our Team
+        ==================================== -->
+
+	<section id="team" class="team" style="display:none;">
+		<div class="container">
+			<div class="row">
+
+				<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+					<h2>Meet Our Team</h2>
+					<div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+				</div>
+
+				<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+				</div>
+
+				<!-- single member -->
+				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+					data-wow-duration="500ms">
+					<div class="member-thumb">
+						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas </h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>John Filmr Doe</h4>
+					<span>Managing Director</span>
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+					data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="member-thumb">
+						<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas </h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Martin Matrone</h4>
+					<span>Lead Developer</span>
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+					data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="member-thumb">
+						<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas </h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Steve Flaulkin</h4>
+					<span>Sr. UI Designer</span>
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+					data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="member-thumb">
+						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas </h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>John Filmr Doe</h4>
+					<span>Managing Director</span>
+				</figure>
+				<!-- end single member -->
+
+			</div>
+		</div>
+	</section>
+
+	<!--
+        End Meet Our Team
+        ==================================== -->
+
+	<!--
+        Some fun facts
+        ==================================== -->
+
+	<section id="facts" class="facts">
+		<div class="parallax-overlay">
+			<div class="container">
+				<div class="row number-counters" style="display: none;">
+
+					<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+						<h2>Some Fun Facts</h2>
+						<div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+					</div>
+
+					<!-- first count item -->
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
+						data-wow-duration="500ms">
+						<div class="counters-item">
+							<i class="fa fa-clock-o fa-3x"></i>
+							<strong data-to="3200">0</strong>
+							<!-- Set Your Number here. i,e. data-to="56" -->
+							<p>Hours of Work</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+						data-wow-delay="300ms">
+						<div class="counters-item">
+							<i class="fa fa-users fa-3x"></i>
+							<strong data-to="120">0</strong>
+							<!-- Set Your Number here. i,e. data-to="56" -->
+							<p>Satisfied Clients</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+						data-wow-delay="600ms">
+						<div class="counters-item">
+							<i class="fa fa-rocket fa-3x"></i>
+							<strong data-to="360">0</strong>
+							<!-- Set Your Number here. i,e. data-to="56" -->
+							<p> Projects Delivered </p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms"
+						data-wow-delay="900ms">
+						<div class="counters-item">
+							<i class="fa fa-trophy fa-3x"></i>
+							<strong data-to="6454">0</strong>
+							<!-- Set Your Number here. i,e. data-to="56" -->
+							<p>Awards Won</p>
+						</div>
+					</div>
+					<!-- end first count item -->
+
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-5 text-center">
+						<div class="section-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+							<span class="h6 text-color">S'abonner à notre newsletter</span>
+							<h2 class="mt-3 content-title text-white">Tous sur les dernières mises à jour et actualités
+								de <strong class="bit">bIT</strong></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="display:flex;">
+					<div class="col-md-6 col-sm-8 col-xs-12" style="margin:auto;">
+						<form action="#" class="subscribe">
+							<input type="email" id="subscribe" name="newsletter"
+								placeholder="ENTREZ VOTRE ADRESSE E-MAIL" autocomplete="off">
+							<input type="submit" value="&#8594;" id="subs">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="margin:0; padding:0">
+		<div class="container-fluid">
+			<div class="row" style="padding:0">
+				<div class="col-md-3 col-sm-6 col-12" style="padding: 0;">
+					<div class="bg-primary" style="padding: 3rem; height: 100%; text-align:center;">
+						<h3>Les embauches</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem, maxime, aperiam
+							recusandae deserunt harum maiores !</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12" style="padding: 0;">
+					<div class="bg-primary-shade" style="padding: 3rem; height: 100%; text-align:center;">
+						<h3>Nos réalisations</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem, maxime, aperiam
+							recusandae deserunt harum maiores !</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12" style="padding: 0;">
+					<div class="bg-primary" style="padding: 3rem; height: 100%; text-align:center;">
+						<h3>Notre actualité</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem, maxime, aperiam
+							recusandae deserunt harum maiores !</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12" style="padding: 0;">
+					<div class="bg-primary-shade" style="padding: 3rem; height: 100%; text-align:center;">
+						<h3>Nos évènements</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem, maxime, aperiam
+							recusandae deserunt harum maiores !</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+        End Some fun facts
+        ==================================== -->
+
+
+	<!--
+        Contact Us
+        ==================================== -->
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-5 text-center">
+					<div class="section-title wow bounceInDown animated" data-wow-duration="500ms">
+						<span class="h6 text-color">Contactez nous</span>
+						<h2 class="mt-3 content-title ">N’hésitez pas à nous contacter pour plus d’informations</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row mb50">
+
+				<!-- <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+					<h2>Contactez nous</h2>
+					<div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+				</div> -->
+
+				<!-- <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+					</div> -->
+
+				<!-- contact address -->
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+					<div class="info">
+						<div class="address">
+							<i class="fa fa-map-marker"></i>
+							<h4>Adresse:</h4>
+							<p>KM4 Pointe-Noire Congo</p>
+						</div>
+
+						<div class="email">
+							<i class="fa fa-at"></i>
+							<h4>Email:</h4>
+							<p>contact@koyekola.com</p>
+						</div>
+
+						<div class="phone">
+							<i class="fa fa-phone"></i>
+							<h4>Téléphone:</h4>
+							<p>+242 055207308</p>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- end contact address -->
+
+				<!-- contact form -->
+				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms"
+					data-wow-delay="300ms">
+					<div class="contact-form">
+						<br />
+						<h3>Mboté!</h3>
+						<form action="contact.php" method="post" id="contact-form">
+							<div class="input-group name-email">
+								<div class="input-field">
+									<input type="text" name="name" id="name" placeholder="Nom" class="form-control">
+								</div>
+								<div class="input-field">
+									<input type="email" name="email" id="email" placeholder="Email"
+										class="form-control">
+								</div>
+							</div>
+							<div class="input-group">
+								<textarea name="message" id="message" placeholder="Message"
+									class="form-control"></textarea>
+							</div>
+							<div class="input-group">
+								<!-- <input type="submit" id="form-submit" class="pull-right" value="Envoyer le message"> -->
+								<button type="submit" id="form-submit" class="pull-right">
+									<span><i class="fa fa-paper-plane"></i> Envoyer</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- end contact form -->
+
+			</div>
+		</div>
+
+		<!-- Google map -->
+		<!-- <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div> -->
+		<!-- End Google map -->
+
+	</section>
+
+	<!--
+        End Contact Us
+        ==================================== -->
+
+
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row" style="display: none;">
+
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+					<div class="footer-single">
+						<img src="img/footer-logo.png" alt="">
+						<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+							nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+					data-wow-delay="300ms">
+					<div class="footer-single">
+						<h6>Subscribe </h6>
+						<form action="#" class="subscribe">
+							<input type="text" name="subscribe" id="subscribe">
+							<input type="submit" value="&#8594;" id="subs">
+						</form>
+						<p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+					data-wow-delay="600ms">
+					<div class="footer-single">
+						<h6>Explore</h6>
+						<ul>
+							<li><a href="#">Inside Us</a></li>
+							<li><a href="#">Flickr</a></li>
+							<li><a href="#">Google</a></li>
+							<li><a href="#">Forum</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+					data-wow-delay="900ms">
+					<div class="footer-single">
+						<h6>Support</h6>
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Market Blog</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Pressroom</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright text-center hide" style="font-size: 1px; color:#1ea78d;">
+						Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved.
+						Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+					</p>
+					<p class="copyright text-center">
+						Copyright © 2022 <a href="mailto:kalakala.chancel@gmail.com">6IT</a>. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<!-- Essential jQuery Plugins
+		================================================== -->
+	<!-- Main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Single Page Nav -->
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<!-- Twitter Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jquery.fancybox.pack -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- jquery.mixitup.min -->
+	<script src="js/jquery.mixitup.min.js"></script>
+	<!-- jquery.parallax -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<!-- jquery.countTo -->
+	<script src="js/jquery-countTo.js"></script>
+	<!-- jquery.appear -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- Contact form validation -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+	<!-- Google Map -->
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script> -->
+	<!-- jquery easing -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- jquery easing -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW({
+			boxClass: 'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 120,          // distance to the element when triggering the animation (default is 0)
+			mobile: false,       // trigger animations on mobile devices (default is true)
+			live: true        // act on asynchronously loaded content (default is true)
+		}
+		);
+		wow.init();
+	</script>
+	<!-- Custom Functions -->
+	<script src="js/custom.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			/* ========================================================================= */
+			/*	Contact Form
+			/* ========================================================================= */
+
+			$('#contact-form').validate({
+				rules: {
+					name: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					message: {
+						required: true
+					}
+				},
+				messages: {
+					name: {
+						required: "come on, you have a name don't you?",
+						minlength: "your name must consist of at least 2 characters"
+					},
+					email: {
+						required: "no email, no message"
+					},
+					message: {
+						required: "um...yea, you have to write something to send this form.",
+						minlength: "thats all? really?"
+					}
+				},
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						type: "POST",
+						data: $(form).serialize(),
+						url: "process.php",
+						// url: "./mail.php",
+						success: function () {
+							$('#contact-form :input').attr('disabled', 'disabled');
+							$('#contact-form').fadeTo("slow", 0.15, function () {
+								$(this).find(':input').attr('disabled', 'disabled');
+								$(this).find('label').css('cursor', 'default');
+								$('#success').fadeIn();
+							});
+						},
+						error: function () {
+							$('#contact-form').fadeTo("slow", 0.15, function () {
+								$('#error').fadeIn();
+							});
+						}
+					});
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

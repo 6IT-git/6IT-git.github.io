@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="fr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="fr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="fr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <!-- meta charec set -->
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Page Title -->
+    <title>6IT</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Toutes les réalisation de 6IT">
+    <meta name="keywords"
+        content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="6IT">
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Font -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Twitter Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jquery.fancybox  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- media-queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- slick slider -->
+    <!-- <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css"> -->
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <style>
+        .breadcrumb {
+            padding: 0;
+            background: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .carousel .item {
+            overflow: visible;
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-inner {
+            max-height: 600px;
+            overflow-y: auto;
+            box-shadow: 0px 1px 2px #ccc;
+        }
+
+        .carousel-control {
+            background: transparent;
+            width: auto;
+        }
+
+        .carousel-control.left {
+            left: -3%;
+        }
+
+        .carousel-control.right {
+            right: -3%;
+        }
+
+        .single-info {
+            margin-top: 15px;
+            font-size: 1.16789em;
+        }
+
+        .single-info a {
+            color: #1877f2;
+            text-decoration: underline;
+        }
+
+        .single-info li {
+            margin-top: 8px;
+        }
+
+        .single-info li p {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .single-info li i {
+            margin-top: 3px;
+            margin-right: 8px;
+            color: #1ea78d;
+        }
+
+        /* skills */
+        .progress-wrapper {
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wave::before,
+        .wave::after {
+            content: "";
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            bottom: 0;
+            left: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 45%;
+            -webkit-transform: translateX(-50%) rotate(0);
+            transform: translateX(-50%) rotate(0);
+            -webkit-animation: rotate 6s linear infinite;
+            animation: rotate 6s linear infinite;
+            z-index: 10;
+        }
+
+        .wave::after {
+            border-radius: 47%;
+            background-color: rgba(255, 255, 255, 0.9);
+            -webkit-transform: translateX(-50%) rotate(0);
+            transform: translateX(-50%) rotate(0);
+            -webkit-animation: rotate 10s linear -5s infinite;
+            animation: rotate 10s linear -5s infinite;
+            z-index: 20;
+        }
+
+        @-webkit-keyframes rotate {
+            50% {
+                -webkit-transform: translateX(-50%) rotate(180deg);
+                transform: translateX(-50%) rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%) rotate(360deg);
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+
+        @keyframes rotate {
+            50% {
+                -webkit-transform: translateX(-50%) rotate(180deg);
+                transform: translateX(-50%) rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%) rotate(360deg);
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .card {
+            border: 0;
+        }
+
+        .card {
+            word-wrap: break-word;
+        }
+
+        .rounded-right,
+        .rounded-top {
+            border-top-right-radius: .25rem !important;
+        }
+
+        .rounded-left,
+        .rounded-top {
+            border-top-left-radius: .25rem !important;
+        }
+
+        .progress-wrapper {
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .position-relative {
+            position: relative !important;
+        }
+
+        .shadow {
+            box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+        }
+
+        footer p .hide a {
+            color: #1ea78d;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+
+    <!-- preloader -->
+    <!-- <div id="preloader">
+			<img src="img/preloader.gif" alt="Preloader">
+		</div> -->
+    <div id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- 
+        Fixed Navigation
+        ==================================== -->
+    <header id="navigation" class="navbar-fixed-top navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <h1 id="logo">
+                        <img src="img/logo.png" alt="Brandi">
+                    </h1>
+                </a>
+                <!-- /logo -->
+            </div>
+
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right" role="navigation">
+				<ul id="nav" class="nav navbar-nav">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="index.html#features">Services</a></li>
+					<li><a class="current" href="index.html#works">Catalogue</a></li>
+					<!-- <li><a href="#team">Team</a></li> -->
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
+
+        </div>
+    </header>
+    <!--
+        End Fixed Navigation
+        ==================================== -->
+
+
+
+    <!--
+        Home Slider
+        ==================================== -->
+
+    <section id="slider">
+        <div id="carousel-example-generic">
+
+            <!-- single slide -->
+            <div class="item active">
+                <div class="carousel-caption" style="bottom: 10%; top:initial">
+                    <!-- <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="display:none">
+                        Meet<span> /GilleBagues</span>
+                    </h2> -->
+                    <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"s>
+                        Meet<span class="color"> /GilleBagues</span>
+                    </h3>
+                    <!-- <p data-wow-duration="1000ms" class="wow slideInRight animated" style="display: none;">
+                        We are a team of professionals
+                    </p> -->
+                    <nav aria-label="breadcrumb" data-wow-duration="1000ms" class="wow slideInRight animated">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                            <li class="breadcrumb-item"><a href="index.html#works">Catalogue</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">GilleBagues</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- end single slide -->
+
+        </div>
+    </section>
+
+    <!--
+            End Home SliderEnd
+            ==================================== -->
+
+
+    <!--
+        Our Works
+        ==================================== -->
+
+    <section id="works">
+        <div class="container">
+            <div class="row">
+                <div class="sec-title text-center" style="display: none;">
+                    <h2>Nos réalisations</h2>
+                    <div class="devider"><i class="fa fa-angellist fa-lg"></i></div>
+                </div>
+                <div class="col-md-3 wow fadeInRight animated" data-wow-duration="500ms">
+                    <div class="row"> 
+                        <!-- col text -->
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <h3>&Agrave propos</h3>
+                            <ul class="single-info">
+                                <li>
+                                    <!-- <h4>Désigation</h4> -->
+                                    <p><i class="fa fa-info-circle fa-lg"></i> gillebagues.com</p>
+                                </li>
+                                <li>
+                                    <!-- <h4>Désigation</h4> -->
+                                    <p><i class="fa fa-info-circle fa-lg"></i> Ce site présente la biographie de
+                                        l'auteur, compositeur, chanteur, interprète et producteur Gille Bagues. Sur une page unique divisée en 
+                                        5 sections, nous avons essayé de mettre en lumière les activités de cet artiste.</p>
+                                </li>
+                                <li>
+                                    <!-- <h4>Désigation</h4> -->
+                                    <p><i class="fa fa-info-circle fa-lg"></i> Languages: <Strong>HTML/CSS, JS</Strong>
+                                    </p>
+                                </li>
+                                <li>
+                                    <!-- <h4>Désigation</h4> -->
+                                    <p>
+                                        <i class="fa fa-info-circle fa-lg"></i> Vendor: <Strong>Bootstrap, JQuery,
+                                            WoW</Strong>
+                                    </p>
+                                </li>
+                                <li><i class="fa fa-calendar fa-lg"></i> Livré le 12 jan 2020</li>
+                                <li>
+                                    <i class="fa fa-globe fa-lg"></i>
+                                    <a href="http://gillebagues.com" target="_blank">http://gillebagues.com</a>
+                                </li>
+                                <li><i class="fa fa-folder-open fa-lg"></i> Présentation</li>
+                            </ul>
+                        </div> <!-- end col text -->
+                        
+                        <!-- col progress  -->
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <br class="hidden-sm" style="margin-top: 12px;" />
+                            <div class="card shadow text-center">
+                                <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+                                    <div class="wave" data-progress="98%"></div>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <h4 class="card-title" style="margin: 25px auto; ">&Eacute;volution <span style="font-size:1.32em">98%</span></h4>
+                                </div>
+                            </div>
+                        </div> <!-- end col progress  -->
+                    </div> <!-- end row Info -->
+                </div> <!-- Info -->
+                <div class="col-md-9 wow fadeInLeft animated" data-wow-duration="500ms">
+                    <div id="carousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <!-- <li data-target="#carousel" data-slide-to="1"></li> -->
+                            <!-- <li data-target="#carousel" data-slide-to="2"></li> -->
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/works/item-1__.jpg" loading="lazy" alt="">
+                            </div>
+                            <!-- <div class="item">
+                                <img src="img/works/item-1__.png" alt="">
+                            </div> -->
+                        </div>
+                        <!-- <a class="left carousel-control" href="#carousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a> -->
+                    </div><!-- Page slider end -->
+                </div><!-- Slider col end -->
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+
+    <!--
+        End Our Works
+        ==================================== -->
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row" style="display: none;">
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+                    <div class="footer-single">
+                        <img src="img/footer-logo.png" alt="">
+                        <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="300ms">
+                    <div class="footer-single">
+                        <h6>Subscribe </h6>
+                        <form action="#" class="subscribe">
+                            <input type="text" name="subscribe" id="subscribe">
+                            <input type="submit" value="&#8594;" id="subs">
+                        </form>
+                        <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="600ms">
+                    <div class="footer-single">
+                        <h6>Explore</h6>
+                        <ul>
+                            <li><a href="#">Inside Us</a></li>
+                            <li><a href="#">Flickr</a></li>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                    data-wow-delay="900ms">
+                    <div class="footer-single">
+                        <h6>Support</h6>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Market Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Pressroom</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright text-center hide" style="font-size: 1px; color:#1ea78d;">
+                        Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved.
+                        Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+                    </p>
+                    <p class="copyright text-center">
+                        Copyright © 2022 <a href="mailto:kalakala.chancel@gmail.com">6IT</a>. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+    <!-- Essential jQuery Plugins
+		================================================== -->
+    <!-- Main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Single Page Nav -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery.fancybox.pack -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- jquery.mixitup.min -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- jquery.parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- jquery.countTo -->
+    <script src="js/jquery-countTo.js"></script>
+    <!-- jquery.appear -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Contact form validation -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+    <!-- Slick Carousel -->
+    <!-- <script src="./slick/slick.min.js"></script>
+    <script src="./slick/slick-animation.min.js"></script> -->
+    <!-- Google Map -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script> -->
+    <!-- jquery easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jquery easing -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 120,          // distance to the element when triggering the animation (default is 0)
+            mobile: false,       // trigger animations on mobile devices (default is true)
+            live: true        // act on asynchronously loaded content (default is true)
+        }
+        );
+        wow.init();
+
+        // banner-carousel
+        /* function bannerCarouselOne() {
+            $('.carousel.slide').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                dots: true,
+                speed: 600,
+                arrows: true,
+                prevArrow: '<button type="button" class="carousel-control left" aria-label="carousel-control"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="carousel-control right" aria-label="carousel-control"><i class="fas fa-chevron-right"></i></button>'
+            });
+            $('.carousel-inner').slickAnimation();
+        }
+        bannerCarouselOne();       */
+
+        $(function () {
+            // $('.carousel.slide').carousel({ interval: 2000 });
+            $('.carousel').carousel('pause');
+        });
+
+        // background color
+        $('[data-color]').each(function () {
+            $(this).css({
+                'background-color': $(this).data('color')
+            });
+        });
+
+        // progress bar
+        $('[data-progress]').each(function () {
+            $(this).css({
+                'bottom': $(this).data('progress')
+            });
+        });
+    </script>
+    <!-- Custom Functions -->
+    <script src="js/default.js"></script>
+</body>
+
+</html>
